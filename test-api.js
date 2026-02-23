@@ -6,7 +6,7 @@ async function testAPI() {
   // Test signup
   try {
     console.log('Testing signup endpoint...');
-    const signupResponse = await fetch('http://localhost:5000/api/signup', {
+    const signupResponse = await fetch('https://book-scape-backend.vercel.app/api/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ async function testAPI() {
   // Test login
   try {
     console.log('\nTesting login endpoint...');
-    const loginResponse = await fetch('http://localhost:5000/api/login', {
+    const loginResponse = await fetch('https://book-scape-backend.vercel.app/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
